@@ -3,25 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #3949AB;
+  --primary-dark: #303F9F;
+  --secondary: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-gray-800;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
+
+.btn-primary {
+  @apply bg-[#3949AB] text-white px-6 py-2 rounded-full hover:bg-[#303F9F] transition-colors;
+}
+

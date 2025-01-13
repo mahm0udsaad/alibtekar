@@ -1,20 +1,20 @@
-import { Nav } from '@/components/nav'
-import { Footer } from '@/components/footer'
-import { Gallery } from '@/components/gallery'
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
+import { Gallery } from "@/components/gallery";
 
 export default function PreviousWorksPage() {
   return (
     <main className="min-h-screen">
       <Nav />
-      
+
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center">
-        <div 
+      <section className="relative h-[50vh] flex items-center pt-16">
+        <div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: 'url("/placeholder.svg?height=800&width=1200")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
           <div className="absolute inset-0 bg-[#3949AB]/60 mix-blend-multiply" />
@@ -30,6 +30,5 @@ export default function PreviousWorksPage() {
       <Gallery />
       <Footer />
     </main>
-  )
+  );
 }
-

@@ -113,7 +113,7 @@ export default function ServicesPage() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[50vh] flex items-center pt-16">
         <div
           className="absolute inset-0 z-0"
           style={{
